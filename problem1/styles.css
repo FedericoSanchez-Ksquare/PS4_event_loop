@@ -65,33 +65,16 @@
     background: white;
     height: 30px;
     width: 30px;
-    position: absolute;
-    top: 46%;
-    left: 48%;
     border-radius: 20px;
     z-index: 8;
+    grid-column: 2;
+    grid-row: 2;
+    justify-content: center;
+    justify-self: center;
+    align-self: center;
+
 }
-.twelve{
-    
-    font-size: 50px;
-    position: absolute;
-}
-.three{
-    display: flex;
-    justify-items: end;
-    font-size: 50px;
-    position: absolute;
-}
-.six{
-    
-    font-size: 50px;
-    position: absolute;
-}
-.nine {
-    
-    font-size: 50px;
-    position: absolute;
-}
+
 
 @keyframes rotate {
     100% {
@@ -109,4 +92,49 @@
 
 .seconds {
     animation: rotate 60s infinite linear;
+}
+.grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    width: inherit;
+    height: inherit;
+    margin: auto;
+}
+.twelve {
+    font-size: 50px;
+    grid-column: 2 ;
+    grid-row: 1;
+    justify-content: center;
+    justify-self: center;
+    align-self: start;
+}
+
+.three {
+    font-size: 50px;
+    grid-column: 3;
+    grid-row: 2;
+    justify-content: center;
+    justify-self: end;
+    align-self: center;
+}
+
+.six {
+
+    font-size: 50px;
+    grid-column: 2;
+    grid-row: 3;
+    justify-content: center;
+    justify-self: center;
+    align-self: end;
+}
+
+.nine {
+
+    font-size: 50px;
+    grid-column: 1 ;
+    grid-row: 2;
+    justify-content: center;
+    justify-self: start;
+    align-self: center;
 }
